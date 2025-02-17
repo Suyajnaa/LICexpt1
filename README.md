@@ -1,4 +1,4 @@
-# LIC Experiment 1
+# LIC LAB Experiment 1
 
 # Design circuit 1
 
@@ -132,9 +132,9 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
     
 **Procedure :**
    
-•  Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and thenRun.
+•  Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and then Run.
    
- • Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.;
+ • Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.
 
   **Graph :**
   
