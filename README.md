@@ -155,7 +155,7 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
 
 1) DC Analysis:
 
-The DC analysis was performed by selecting the DC operating point. After running the simulation, we observed the DC operating point for the MOSFET. The result shows the drain current and voltage levels, confirming that the transistor is operating in the active region.
+     The DC analysis was performed by selecting the DC operating point. After running the simulation, we observed the DC operating point for the MOSFET. The result shows the drain current and voltage levels, confirming that the transistor is operating in the active region.
 
 2) Transient Analysis:
  
@@ -163,11 +163,11 @@ The DC analysis was performed by selecting the DC operating point. After running
 
 3) AC Analysis:
    
-In the AC analysis, the frequency sweep was configured from 0.1Hz to 1THz, with 20 points in a decade sweep. This analysis shows the frequency response of the amplifier.
+   In the AC analysis, the frequency sweep was configured from 0.1Hz to 1THz, with 20 points in a decade sweep. This analysis shows the frequency response of the amplifier.
 
 # Inference  ( Design-1):
    
-  •  The DC analysis helps to set the biasing conditions for the MOSFET, ensuring that it is in the correct operating region (saturation) for amplification.
+ •  The DC analysis helps to set the biasing conditions for the MOSFET, ensuring that it is in the correct operating region (saturation) for amplification.
     
  •  The transient analysis shows how the input signal (AC) is amplified by the common-source configuration. The output signal exhibits amplification and inversion, which is characteristic of the common-source amplifier.
 
@@ -215,16 +215,17 @@ The Common-Source (CS) Amplifier with a Current Source Load is a circuit where t
 
 • Perform DC analysis, Transient analysis and AC analysis by giving a sine wave to the voltage source at gate .
 
-• Find V2
+# Calculation
+    Find V2
 
             | Vg - Vs| > |Vt|
 
           | Vg - 1.77| > | -0.366|
 
                | Vg | >  |1.38|
+               
 
-
-  # Circute 
+ # Circute 
   
 ![Screenshot 2025-02-17 224656](https://github.com/user-attachments/assets/d07f8a1b-dd58-479c-9296-6319c9ebe882)
 
@@ -234,7 +235,7 @@ The Common-Source (CS) Amplifier with a Current Source Load is a circuit where t
 
 **1) DC Analysis :**
 
- **  Procedure :**
+ **Procedure :**
  
    Select the dc output point(DC op pnt) in Simulation command and then Run.
    
@@ -246,27 +247,30 @@ The Common-Source (CS) Amplifier with a Current Source Load is a circuit where t
 
 **2) Transient Analysis:**
 
-  ** Procedure :**
+  **Procedure :**
   
    Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and thenRun.
    
    Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.
 
-   **  Graph**
-   
-    ![Screenshot 2025-02-17 224951](https://github.com/user-attachments/assets/246c5d28-befa-4ed0-9554-dacde703d635)
+   **Graph :**
+
+   ![Screenshot 2025-02-17 224951](https://github.com/user-attachments/assets/e53e9040-1a74-4e53-99be-e40ce790b2ce)
 
 
    
 **3) AC Analysis:**
    
-**   Procedure :**
- Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
+  **Procedure :**
+  
+    Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
 
- ** Graph**
+   **Graph :**
+   
 ![Screenshot 2025-02-17 231611](https://github.com/user-attachments/assets/d06643a6-2708-4c38-86c0-5ff25469b1d4)
 
 # RESULT( Design-2):
+
 1) DC Analysis : The DC analysis validates the correct biasing of the MOSFETs, with the drain and gate voltages corresponding to the expected operating conditions.
 
 2) Transient Analysis : The output signal at the drain amplifies the input sine wave, confirming the amplification process is functioning properly.
