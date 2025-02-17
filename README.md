@@ -59,9 +59,9 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
 
   **Procedure :**
   
-   Select the dc output point(DC op pnt) in Simulation command and then Run.
+  •  Select the dc output point(DC op pnt) in Simulation command and then Run.
    
-   Below figure is what we get after DC analysis:
+  •  Below figure is what we get after DC analysis:
    
    ![Screenshot 2025-02-17 194454](https://github.com/user-attachments/assets/4c87c9ea-a6dc-43da-bd2c-8c25d7bf574c)
 
@@ -69,10 +69,9 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
 
  **Procedure :**
  
-   Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and then Run.
+ •   Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and then Run.
    
-   
-   Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.
+ •   Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.
 
   **Graph :**
     
@@ -82,7 +81,7 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
    
 **Procedure :**
 
- Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
+•   Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
 
 **Graph :**
 
@@ -237,9 +236,9 @@ The Common-Source (CS) Amplifier with a Current Source Load is a circuit where t
 
  **Procedure :**
  
-   Select the dc output point(DC op pnt) in Simulation command and then Run.
+  •  Select the dc output point(DC op pnt) in Simulation command and then Run.
    
-   Below figure is what we get after DC analysis
+  •  Below figure is what we get after DC analysis
    
    ![Screenshot 2025-02-17 230242](https://github.com/user-attachments/assets/75143367-485e-4c04-900b-ae7b1afdfcfd)
 
@@ -249,9 +248,9 @@ The Common-Source (CS) Amplifier with a Current Source Load is a circuit where t
 
   **Procedure :**
   
-   Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and thenRun.
+  •  Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and thenRun.
    
-   Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.
+  •  Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.
 
    **Graph :**
 
@@ -263,7 +262,7 @@ The Common-Source (CS) Amplifier with a Current Source Load is a circuit where t
    
   **Procedure :**
   
-    Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
+   •  Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
 
    **Graph :**
    
