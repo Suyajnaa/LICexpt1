@@ -1,4 +1,4 @@
-# LICexpt1
+# LIC Experiment 1
 
 # Design circuit 1
 
@@ -56,7 +56,9 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
   ![Screenshot 2025-02-17 194428](https://github.com/user-attachments/assets/8f931ca7-6a6c-4f84-a9a8-319f6714711d)
 
 **1) DC Analysis :**
-  ** Procedure :**
+
+  **Procedure :**
+  
    Select the dc output point(DC op pnt) in Simulation command and then Run.
    
    Below figure is what we get after DC analysis:
@@ -64,24 +66,31 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
    ![Screenshot 2025-02-17 194454](https://github.com/user-attachments/assets/4c87c9ea-a6dc-43da-bd2c-8c25d7bf574c)
 
 **2) Transient Analysis:**
- **  Procedure :**
+
+ **Procedure :**
+ 
    Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and then Run.
+   
+   
    Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.
 
-    ** Graph**
+  **Graph :**
     
 ![Screenshot 2025-02-17 194616](https://github.com/user-attachments/assets/a4a370be-9eb4-4520-8ac1-93773bfb3ea7)
    
 **3) AC Analysis:**
    
-** Procedure :**
+**Procedure :**
+
  Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
 
-**Graph**
+**Graph :**
+
 ![Screenshot 2025-02-17 194730](https://github.com/user-attachments/assets/54adb390-1ee4-4eeb-a629-e148bc9c4c3e)
 
 
 # Part 2
+
  # Calculation 
  
      Given , Power = 50u watts
@@ -100,14 +109,16 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
           
                                           Id = 50u /1.8
           
-                                       ** Id= 2.77*10^-5 A**
+                                         Id= 2.77*10^-5 A
 
 
-       ![Screenshot 2025-02-17 191739](https://github.com/user-attachments/assets/2c3a69d7-075f-44c5-acbd-33c0a8ae72ee)
+
+
+ ![Screenshot 2025-02-17 191739](https://github.com/user-attachments/assets/2c3a69d7-075f-44c5-acbd-33c0a8ae72ee)
    
 **1) DC Analysis :**
    
-** Procedure :**
+**Procedure :**
    
     • Select the dc output point(DC op pnt) in Simulation command and then Run.
    
@@ -119,23 +130,24 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
 
 **2) Transient Analysis:**
     
-**   Procedure :**
+**Procedure :**
    
 •  Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and thenRun.
    
  • Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.;
 
-  ** Graph **
+  **Graph :**
   
-      ![Screenshot 2025-02-17 193713](https://github.com/user-attachments/assets/d6f975f7-d04c-447c-b093-49f783f1c3c5)
+  ![Screenshot 2025-02-17 193713](https://github.com/user-attachments/assets/660372dd-d6be-4b90-9260-539ea6ac5d9f)
 
-
-   
+  
 **3) AC Analysis:**
    
-  ** Procedure : **
+  **Procedure :**
    
 •  Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
+
+   **Graph :**
 
  ![Screenshot 2025-02-17 194153](https://github.com/user-attachments/assets/d3c7b095-90ff-41e4-a830-077f00844bcc)
 
