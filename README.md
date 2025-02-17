@@ -1,49 +1,192 @@
 # LICexpt1
 
-Aim : Perform DC Analysis, Transient Analysis and AC Analysis for the Given Circuit Designs and get value of width of  such that power 50u ;
+# Design circuit 1
 
-Components : Mosfet (CMOSN),resistors,DC power supply.
+# Aim : 
 
-Procedure :
+Perform DC Analysis, Transient Analysis and AC Analysis for the given circuit designs and get value of width of  such that power 50u ;
+
+# Components :
+
+Mosfet (CMOSN),resistors,DC power supply.
+# Theory:
+
+The common-source (CS) amplifier setup  is like the source is grounded, the gate receives the input signal, and the drain is connected to a resistor acting as the load. The transistor amplifies the input signal by modulating the drain current based on the gate-source voltage VGS. The drain resistor  RD converts the current variations into voltage changes, producing the amplified output signal.;
+
+Operation:
+
+• Input Signal: The AC signal at the gate modulates the gate-source VGS , affecting the drain current Id.
+
+• Amplification: The change in Id  causes a voltage drop across RD,producing an amplified output voltage at the drain.
+
+• Voltage Gain: The voltage gain is given by: Av= -gm * RD.
+
+where gm  is the transconductance of the MOSFET and RD is the drain resistor. The negative sign indicates signal inversion.
+​
+# Procedure :
+
 Part 1
+
 • Make the circuit connection.
 
 • Connect resistor RD(1k ohm) to the drain of the mosfet , voltage source of 0.9V at gate of mosfet  and source of mosfet is grounded  .
 
 • Apply voltage source of VDD(1.8V) to the resistor RD.
-
 • Set length and width of mosfet as 180n and 1u .
-• 
+• Perform DC analysis, Transient analysis and AC analysis by giving a sine wave to the voltage source at gate .
 
+Part 2;
+• Consider power as 50u and calculate Id .
+• Pick length of mosfet as 180n and vary width , till we get the calculated Id value .
+• Perform DC analysis, Transient analysis and AC analysis by giving a sine wave to the voltage source at gate .;
 
 
 # Circute 
+ ![Screenshot 2025-02-17 191726](https://github.com/user-attachments/assets/75862588-acd5-4ba9-8b68-270e55f1201d)
 
-   ![Screenshot 2025-02-17 191726](https://github.com/user-attachments/assets/75862588-acd5-4ba9-8b68-270e55f1201d)
+# Part 1
+  ![Screenshot 2025-02-17 194428](https://github.com/user-attachments/assets/8f931ca7-6a6c-4f84-a9a8-319f6714711d)
 
-Using the Formula for Power, 
+1) DC Analysis :
+   Procedure :;
+   Select the dc output point(DC op pnt) in Simulation command and then Run.;
+   Below figure is what we get after DC analysis;
+   ![Screenshot 2025-02-17 194454](https://github.com/user-attachments/assets/4c87c9ea-a6dc-43da-bd2c-8c25d7bf574c)
 
-P=V*I
+ 2) Transient Analysis:
+   Procedure :;
+   Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and thenRun.;
+   Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.;
 
-We will get the Values of Id as,
+     Graph;
+![Screenshot 2025-02-17 194616](https://github.com/user-attachments/assets/a4a370be-9eb4-4520-8ac1-93773bfb3ea7)
+   
+3) AC Analysis:
+   
+   Procedure :;
+ Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
 
-Id= 5.56 * 10^-5 A
+Graph;
+![Screenshot 2025-02-17 194730](https://github.com/user-attachments/assets/54adb390-1ee4-4eeb-a629-e148bc9c4c3e)
 
-we have to get the output current, Id for the given circuits by adjusting the values of L & W( Length and Width of the Channel of the MOSFET)
 
-Length and Width of the Channel used to obtain the given Current is shown in the figure below;
+# Part 2
+ # Calculation 
+ 
+     Given Power = 50u watts;
+     
+           VDD= 1.8 V
+           
+     WKT,Formula for power is 
+     
+     Power = Voltage * Current 
+     
+          P= VDD*Id
+          
+          Id= P / VDD
 
-   ![Screenshot 2025-02-16 120802](https://github.com/user-attachments/assets/109d353f-a954-4e08-b8d1-603ea40ea67c)
+          By substituting ,
+          
+          Id = 50u /1.8
+          
+          Id= 2.77*10^-5 A
 
-1) DC ANALYSIS:
 
-   Procedure for Performing DC Analysis:
-   we have to select the dc output print(DC op pnt) in the Edit Simulation Command and Run the Simulation
+       ![Screenshot 2025-02-17 191739](https://github.com/user-attachments/assets/2c3a69d7-075f-44c5-acbd-33c0a8ae72ee)
+   
+1) DC Analysis :
+   
+   Procedure :
+   
+ •   Select the dc output point(DC op pnt) in Simulation command and then Run.
+   
+•    Below figure is what we get after DC analysis :
+   
+   ![Screenshot 2025-02-17 191715](https://github.com/user-attachments/assets/dba27530-8e1a-40fa-8e63-c2eea9b83c13)
 
-   ![Screenshot 2025-02-16 121422](https://github.com/user-attachments/assets/8dbd733e-f0a2-4165-8a8e-ebee3b28ace2)
 
-   The Figure below shows the Values obtained from the DC Analysis : 
 
-   ![Screenshot 2025-02-16 121045](https://github.com/user-attachments/assets/22bca609-a67e-4459-aa60-e584eb189442)
+ 2) Transient Analysis:
+    
+   Procedure :
+   
+•    Select the Transient analysis in Simulation ,  Give the stop time as 5 ms and thenRun.
+   
+ •   Put value of V2 voltage source at gate as sine wave of DC offset 0.9 v, amplitude as 50m and frequency 1k Hz.;
 
-2) Transient Analysis:
+  •    Graph;
+  
+      ![Screenshot 2025-02-17 193713](https://github.com/user-attachments/assets/d6f975f7-d04c-447c-b093-49f783f1c3c5)
+
+
+   
+3) AC Analysis:
+   
+   Procedure :
+   
+•  Select the ac analysis in configure analysis inside  Simulation ,with decade as type of sweep , number of points as 20 , start frequency 0.1Hz and stop frequency 1T Hz and then Run.
+
+ ![Screenshot 2025-02-17 194153](https://github.com/user-attachments/assets/d3c7b095-90ff-41e4-a830-077f00844bcc)
+
+# RESULT( Design-1):
+
+1) DC Analysis:
+
+The DC analysis was performed by selecting the DC operating point. After running the simulation, we observed the DC operating point for the MOSFET. The result shows the drain current and voltage levels, confirming that the transistor is operating in the active region.
+
+ 2)Transient Analysis:
+     A sine wave with a DC offset of 0.9V, amplitude of 50mV, and frequency of 1kHz was applied at the gate. The output voltage was observed at the drain, showing the amplified version of the input signal with signal inversion.
+
+3) AC Analysis:
+In the AC analysis, the frequency sweep was configured from 0.1Hz to 1THz, with 20 points in a decade sweep. This analysis shows the frequency response of the amplifier.
+
+# Inference  
+   
+    •  The DC analysis helps to set the biasing conditions for the MOSFET, ensuring that it is in the correct operating region (saturation) for amplification.
+    
+ •  The transient analysis shows how the input signal (AC) is amplified by the common-source configuration. The output signal exhibits amplification and inversion, which is characteristic of the common-source amplifier.
+
+  •  The AC analysis provides insight into the frequency characteristics of the amplifier. It helps us observe the bandwidth and gain characteristics over a wide frequency range. This is important for understanding the amplifier's performance in different applications.
+
+
+# Design Circuit 2
+# Aim : 
+
+Perform DC Analysis, Transient Analysis and AC Analysis for the given circuit with both nmos and pmos ;
+
+# Components :
+
+Mosfet (CMOSN),resistors,DC power supply.
+# Theory:
+
+The common-source (CS) amplifier setup  is like the source is grounded, the gate receives the input signal, and the drain is connected to a resistor acting as the load. The transistor amplifies the input signal by modulating the drain current based on the gate-source voltage VGS. The drain resistor  RD converts the current variations into voltage changes, producing the amplified output signal.;
+
+Operation:
+
+• Input Signal: The AC signal at the gate modulates the gate-source VGS , affecting the drain current Id.
+
+• Amplification: The change in Id  causes a voltage drop across RD,producing an amplified output voltage at the drain.
+
+• Voltage Gain: The voltage gain is given by: Av= -gm * RD.
+
+where gm  is the transconductance of the MOSFET and RD is the drain resistor. The negative sign indicates signal inversion.
+​
+# Procedure :
+
+Part 1
+
+• Make the circuit connection.
+
+• Connect resistor RD(1k ohm) to the drain of the mosfet , voltage source of 0.9V at gate of mosfet  and source of mosfet is grounded  .
+
+• Apply voltage source of VDD(1.8V) to the resistor RD.
+• Set length and width of mosfet as 180n and 1u .
+• Perform DC analysis, Transient analysis and AC analysis by giving a sine wave to the voltage source at gate .
+
+Part 2;
+• Consider power as 50u and calculate Id .
+• Pick length of mosfet as 180n and vary width , till we get the calculated Id value .
+• Perform DC analysis, Transient analysis and AC analysis by giving a sine wave to the voltage source at gate .;
+
+
+  
