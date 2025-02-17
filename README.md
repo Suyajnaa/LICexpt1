@@ -157,7 +157,7 @@ where gm  is the transconductance of the MOSFET and RD is the drain resistor. Th
 
 The DC analysis was performed by selecting the DC operating point. After running the simulation, we observed the DC operating point for the MOSFET. The result shows the drain current and voltage levels, confirming that the transistor is operating in the active region.
 
- 2)Transient Analysis:
+2) Transient Analysis:
  
      A sine wave with a DC offset of 0.9V, amplitude of 50mV, and frequency of 1kHz was applied at the gate. The output voltage was observed at the drain, showing the amplified version of the input signal with signal inversion.
 
