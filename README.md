@@ -2,24 +2,24 @@
 
 Aim : Perform DC Analysis, Transient Analysis and AC Analysis for the Given Circuit Designs and get value of width of  such that power 50u ;
 
+Components : Mosfet (CMOSN),resistors,DC power supply.
+
+Procedure :
+Part 1
+• Make the circuit connection.
+
+• Connect resistor RD(1k ohm) to the drain of the mosfet , voltage source of 0.9V at gate of mosfet  and source of mosfet is grounded  .
+
+• Apply voltage source of VDD(1.8V) to the resistor RD.
+
+• Set length and width of mosfet as 180n and 1u .
+• 
+
+
+
 # Circute 
 
    ![Screenshot 2025-02-17 191726](https://github.com/user-attachments/assets/75862588-acd5-4ba9-8b68-270e55f1201d)
-
-
-Aim : To find DC operating point,find gain using transient analysis and AC analysis.
-
-Components : Mosfet,resistors,DC power supply.
-
-Procedure :
-
-• Make the circuit connection as show above.
-
-• Connect the RD resistor to the drain terminal and DC power supply to the gate terminal as well as to the resistor.
-
-• Connect the source terminal to the ground.
-
-• Set the input voltage to 0.9 V and VDD to 1.8 V.
 
 Using the Formula for Power, 
 
